@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    rel="stylesheet" href="Estilos.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+   
+    <title>Productos</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="img/nike negro.png" alt="icono nike negro" srcset="">
+            </div>
+        <nav>
+            <ul type="1" ; type="2">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="productos.html"
+                    class="marcado">Productos</a></li>
+                <li><a href="servicio_al_cliente.html">Servicio al cliente</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="deportes.html">Deportes</a></li>
+            </ul>
+        </nav>
+        <div>
+            <form action="envio.php" method="get">
+                <input type="email" name="correo" 
+                placeholder="buscar">
+             <button type="submit">buscar</button> 
+                    </form>
+        </div>
+    </div>
+    </header>
+<section id="vidriera">
+    <div class="contenedor">
+        <h1></h1>
+        
+</section>
+<section id="columnas">
+    <div class="selector">
+        <label for="categoria" style="margin-right: 2%;">Selecciona una categoría: </label>
+        <select id="categoria" onchange="mostrarProductos()">
+            <option value="zapatillas">Zapatillas</option>
+            <option value="sandalias">Sandalias y Ojotas</option>
+            <option value="botines">Botines</option>
+        </select>
+    </div>
+
+    <div class="contenedor2">
+        <div class="columna zapatillas">
+            <img src= "imgnike/Zapatilla verde.jpg" alt="">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nikde dun low 1 aniversario</h5>            
+            <p>Este año es el aniversario de uno de nuestros mas iconicos productos, y lo festejamos con un 50% de descuento, durante todo el mes. </p>
+            <br>
+            <p><strong>$36.000</strong></p>        
+        </div>
+        <div class="columna zapatillas">
+            <img src="imgnike/Zapatilla gris.jpg" alt="">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nuevas KD 14 </h5>
+            <p>Nike presenta las Nike KD14, nike en conjunto con el 2 veces campeon, MVP de finales y MVP de temporada, Kevin durant,lanza su colaboracion numero 14 con la marca.</p>
+            <br>
+            <p><strong>$24.000</strong></p>
+        </div>
+
+        <div class="columna zapatillas">
+            <img src="imgnike/Zapatilla naranja.jpg" alt="">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nike Air Max 1 SC</h5>
+            <p> Volvieron los diseños que tanto nos gustan. Zapatillas deportivas con capsula de aire, ideal para correr. Y superar tus limites</p>
+            <br>
+            <p><strong>$24.000</strong></p>
+        </div>
+
+    </div>
+    <div class="contenedor2">
+        <div class="columna botines">
+            <img src="imgnike/Botines 1.jpg" alt="Botines de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Zapatilla Nike react Gato</h5>
+            <p>Descubre la combinación perfecta de estilo y durabilidad con nuestros botines urbanos de alta resistencia. Dale a tus pies la protección que se merecen mientras destacas tu estilo único.</p>
+            <br>
+            <p><strong>$7800</strong></p>
+        </div>
+        <div class="columna botines">
+            <img src="imgnike/Botines 2.jpg" alt="Botines de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Zapatilla de fútbol sala Nike Lunar Gato II</h5>
+            <p>Eleva tu nivel con nuestros botines diseñados para adaptarse a cualquier ocasión. Experimenta la combinación perfecta de moda y funcionalidad con cada paso que des.</p>
+            <br>
+            <p><strong>$20000</strong></p>
+        </div>
+        <div class="columna botines">
+            <img src="imgnike/Botines 3.jpg" alt="Botines de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nike Mercurial</h5>
+            <p>Para los amantes de la moda deportiva, presentamos nuestros botines diseñados con un toque vanguardista. La tecnología de última generación se une a un diseño audaz para brindarte la confianza que necesitas en cada actividad.</p>
+            <br>
+            <p><strong>$31000</strong></p>
+        </div>
+    </div>
+    <div class="contenedor2">
+        <div class="columna sandalias">
+            <img src="imgnike/Sandalias 1.jpg" alt="Sandalias de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nike Tanjun Sandal</h5>
+            <p>Sumérgete en la frescura del verano con nuestras sandalias diseñadas para brindar un confort total. Mantente fresco y a la moda mientras disfrutas de la ligereza en cada paso.</p>
+            <br>
+            <p><strong>$1200</strong></p>
+        </div>
+
+        <div class="columna sandalias">
+            <img src="imgnike/Sandalias 2.jpg" alt="Sandalias de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5> Nike Odyssey</h5>
+            <p>Si buscas un estilo casual y minimalista, nuestras sandalias son la respuesta. Diseñadas con líneas limpias y una estética moderna, estas sandalias complementarán tu guardarropa de verano.</p>
+            <br>
+            <p><strong>$2140</strong></p>
+        </div>
+
+        <div class="columna sandalias">
+            <img src="imgnike/Sandalias 3.jpg" alt="Sandalias de ejemplo">
+            <small style="color: orange; position: relative;"><strong>Lo nuevo</strong></small>
+            <br>
+            <h5>Nike Náuticas</h5>
+            <p>Prepárate para la aventura con nuestras sandalias deportivas diseñadas para actividades al aire libre. Descubre la combinación perfecta de funcionalidad y estilo mientras exploras nuevos destinos con confianza.</p>
+            <br>
+            <p><strong>$1900</strong></p>
+        </div>
+    </div>
+    
+    <script>
+        function mostrarProductos() {
+            var categoriaSeleccionada = document.getElementById("categoria").value;
+            var productos = document.querySelectorAll(".columna");
+
+            productos.forEach(function(producto) {
+                producto.style.display = "none";
+            });
+
+            var productosMostrar = document.querySelectorAll("." + categoriaSeleccionada);
+            productosMostrar.forEach(function(producto) {
+                producto.style.display = "block";
+            });
+        }
+
+        window.onload = function() {
+            mostrarProductos();
+        };
+    </script>
+</section>
+
+<footer>
+    <div class="contenedor">
+        <div class="bandera_ubi"> 
+            <a href="https://www.google.com/maps/place/Nike+Factory+Store+La+Plata/@-34.884153,-58.003287,13z/data=!4m6!3m5!1s0x95a2e75e36b064ab:0x6a550be8e3a32edc!8m2!3d-34.884294!4d-58.003974!16s%2Fg%2F1vgqf83c?hl=es-AR&entry=ttu"><img  src="img/maps-and-flags.png" alt=""></a>
+            <img src="img/argentina.png" alt="icono bandera arg">
+        </div>
+        <div class="Alumnos"> 
+            <p>Hernandez lautaro-Santiago Ciancio-Juan ignacio Fischenich</p>
+            <p>FADI color analogo, tipografia Roboto Slab</p>
+            <p>Diseño Multimedia 1 copyright &copy; UADE 2023</p>
+        </div>
+        <div class="redes">
+            <a href="https://twitter.com/Nike?"><img src="svg/twt.svg" alt=""></a>
+            <a href="https://www.instagram.com/nike/"><img  src="svg/ig.svg" alt=""></a>
+            <a href="https://www.facebook.com/nike/?locale=es_LA"><img  src="svg/face.svg" alt=""></a>
+            <a href="https://youtu.be/9LtWIG2c7G4"><img src="img/youtube.png" alt=""> </a>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>

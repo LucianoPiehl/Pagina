@@ -1,0 +1,780 @@
+body {
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+/*HOME*/
+.contenedor {
+    position: relative;
+}
+.contenedor2 {
+    position: relative;
+}
+.contenedor3 {
+    position: relative;
+}
+/* SLIDER*/
+#todo{
+    margin-left: auto;
+    margin-right: auto;
+}
+#sliderr{
+  max-width: 100%;
+  width:100%;
+  background-color: #FFF;
+  /*width: 100%;*/
+  margin: 0;
+
+  position: relative;
+  text-align: center;
+  padding-top: 0;
+/*  padding-left: 38% ;*/
+  display: flex;
+  justify-content: center;
+}
+
+#sliderr > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+
+}
+
+#sliderr > ul.slider{
+  position: relative;
+  /* max-width: 800px; */
+  width: 100%;
+  height: 500px;
+}
+
+
+
+#sliderr > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+#sliderr > ul.slider li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-left: -1px;
+    margin-top: -0.8px;
+    border-radius: 0px;
+}
+
+#sliderr > ul.slider li:first-child {
+    opacity: 1; /*Muestra el primer <li>*/
+}
+
+#sliderr > ul.slider li:target {
+    opacity: 1; /*Muestra el <li> del enlace que pulsemos*/
+}
+
+
+#newsletter2 > .menu{
+  text-align: center;
+/*  margin: 20px;*/
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #FFF;
+  margin: 0px;
+  padding-top: 5px;
+  
+
+}
+
+#newsletter2 > .menu li{
+  display: inline-block;
+  text-align: center;
+  
+}
+
+#newsletter2 > .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 10px;
+    width: 4px;
+    height: 4px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid #000000;
+    transition: background-color 0.5s ease;
+    
+  }
+  
+#newsletter2 > .menu li a:hover{
+    background-color: grey;
+  }
+  
+img {
+    width: 100%;
+    height: auto;
+}
+
+.above-slider {
+    text-align: center;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/*FIN HOME*/
+
+/* ordenes generales */
+.colores {
+    color: #20232A;
+    color: #000000;
+    color: #E7DFD8;
+    color: #EDEDED;
+    color: #A6A6A6;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: #E7DFD8;
+    position: relative;
+    min-height: 100vh;
+}
+
+.logo_nike {
+    color: #ffff;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: #E7DFD8;
+    height: 40px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #E7DFD8;
+}
+
+.btn:hover {
+    background-color: #ffff;
+    color: #E7DFD8;
+}
+
+hr {
+    border: solid 1px;
+    color: aliceblue;
+}
+
+/* código header */
+header {
+    background-color: #E7DFD8;
+    color: #000000;
+    min-height: 70px;
+    padding-top: 60px;
+    border-bottom: #000000 solid 2px;
+    background-color: #A6A6A6;
+    padding: 30px;
+}
+input[type="email"] {
+    padding: 10px;
+    border: 2px solid #black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #black;
+}
+
+
+#logo {
+    float: left;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#logo h1 {
+    font-size: 0.9em;
+}
+header {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+nav {
+    float: right;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline;
+    padding: 0px 20px
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header a:hover {
+    color: #000000;
+}
+
+.marcado {
+    color: #ffff;
+    font-weight: 900;
+}
+
+.cuadrito {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Vidriera */
+#vidriera {
+
+    /* Estilos para el contenedor del slider */
+    #vidriera .contenedor {
+        max-width: 800px;
+        /* Ajusta el ancho según sea necesario */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Estilos para el slider */
+    .slider {
+        display: flex;
+        overflow: hidden;
+    }
+
+    /* Estilos para cada slide */
+    .slide {
+        min-width: 100%;
+        /* Ancho mínimo igual al del contenedor */
+        transition: transform 0.5s ease;
+        /* Efecto de transición */
+    }
+
+    /* Animación del desplazamiento de las imágenes */
+    .slider:hover .slide {
+        transform: translateX(-100%);
+    }
+
+    /* Estilos para las imágenes dentro de los slides */
+    .slide img {
+        width: 100%;
+        /* Para ajustar el tamaño de las imágenes al contenedor */
+        height: auto;
+    }
+
+    .above-slider {
+        position: absolute;
+        z-index: 999;
+        /* Ajusta el valor del z-index según sea necesario para que el div esté por encima de los sliders */
+        /* Ajusta top, left, right, bottom según tu diseño */
+        right: 20px;
+        /* Otros estilos para el contenedor si es necesario */
+    }
+
+    /* Estilos adicionales para el div que contiene las palabras */
+    .above-slider div {
+        /* Estilos de fondo, color, tamaño de fuente, etc. */
+        /* Ejemplo de color de fondo con opacidad */
+        padding: 20px;
+    }
+
+}
+
+#vidriera h1 {
+    font-size: 30px;
+    padding-top: 80px;
+    color: #000000;
+
+}
+
+#vidriera p {
+    font-size: 30px;
+    color: #000000;
+}
+
+/* Ideas */
+
+#vidriera_ideas {
+    background-image: url(img/Nike\ noticias.jpeg);
+    min-height: 345px;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#vidriera_ideas h1 {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+article.texto_ideas {
+    float: none;
+    max-width: 60%;
+}
+
+.texto_ideas p {
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+#vidriera_somos h1 {
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+ .imgnike img {
+width: 100%;
+ }
+#vidriera_contacto {
+
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+article.texto_contacto {
+    float: none;
+    max-width: 60%;
+}
+
+#contacto h4 {
+    color: #000000;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 0 35px;
+    float: left;
+}
+
+#contacto h5 {
+    /* color: #a94604; */
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.texto_contacto {
+    margin-bottom: 20px;
+}
+
+#ideas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS NEWSLETTER  */
+#newsletter {
+    background-color: #000000;
+    min-height: 35px;
+    color: #000000;
+    padding: 15px;
+}
+
+#newsletter h3 {
+    float: left;
+    font-size: 24px;
+}
+
+#newsletter form {
+    float: right;
+    line-height: 35px;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 26px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+}
+
+#somos a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Columnas 
+#columnas {
+    margin-top: 20px;
+    padding-bottom: 200px;
+}
+
+#columnas h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+
+#columnas img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    background-color: #ffff;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+.columna {
+    float: left;
+    width: 25%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#columnas h5 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #000000;
+    padding: 2px 25px;
+    margin-top: 15px;
+}
+
+#columnas p {
+    text-align: center;
+    font-size: 1em;
+    padding: 2px 25px;
+}
+*/
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-left: 3%;
+}
+.contenedor3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-left: 3%;
+    background-color: 0;
+    margin-bottom: 5%;
+}
+.contenedor3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .columna2 {
+    width: 22%;
+    margin: 0;
+    text-align: center; /* Añade este estilo para centrar el contenido verticalmente */
+  }
+  
+  .columna2 img {
+    max-width: 70%; /* Limita el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    max-height: 150px; /* Establece una altura máxima, ajusta según sea necesario */
+    margin-bottom: 10px; /* Añade un margen inferior para separar la imagen del texto */
+  }
+  
+  
+.columna {
+    width: 400px;
+    height: 450px;
+    background-color: #f5f5f5; /* Puedes ajustar el color de fondo según tu diseño */
+    padding: 20px;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+.selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#categoria {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #a1a1a1;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #000000;
+    cursor: pointer;
+}
+
+#categoria:hover {
+    background-color: #a1a1a1;
+    color: #ecf0f1;
+}
+
+#categoria:focus {
+    outline: none;
+}
+
+
+.columna img {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+    height: auto;
+}
+
+.columna h5 {
+    margin-top: 10px;
+}
+
+.columna p {
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    height: 100%;
+    padding-top: 20px;
+    line-height: 40px;
+    background-color: #ffff;
+    color: #000000;
+    /* text-align: center; */
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.contenedor2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor2 img {
+    width: 350px;
+    height: 200px;
+}
+.contenedor3 img {
+    width: 350px;
+    height: 200px;
+}
+.contenedor h4 {
+    margin-left: 
+}
+
+.contenedor img {
+    width: 50px;
+    padding: 5px;
+}
+.columna img {
+   
+}
+.Alumnos {
+    color: #000000;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+    padding: 50px;
+}
+/* Estilos para el botón */
+button {
+    padding: 8px 16px; /* Ajusta el espaciado interno del botón */
+    background-color: #ffff; /* Cambia el color de fondo del botón */
+    color: #000000; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Agrega bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    /* Agrega otros estilos según tus preferencias */
+}
+
+/* Estilos para el botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el cursor */
+    color: #FFF
+    /* Puedes agregar más estilos al botón al pasar el cursor */
+}
+.no-estilos{
+    width: 200px;
+    margin: 2%;
+}
+
+
+/* responsive web design @media */
+
+@media only screen and (max-width: 768px) {
+
+    header #logo,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header li {
+        padding: 0 6px;
+    }
+
+    header nav {
+        padding-bottom: 17px;
+    }
+
+    /* mediaquery vidriera */
+    #vidriera h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    #vidriera p {
+        font-size: 30px;
+    }
+
+    /* mediaquery newsletter */
+    #newsletter h3,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #netsletter input {
+        width: 100%;
+        margin: 12px 0px;
+    }
+
+    #newsletter h3 {
+        font-size: 1em;
+    }
+
+    #newsletter button {
+        width: 100%;
+    }
+
+    /* media-query columnas */
+    #columnas h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #columnas .columna {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+}
+#newsletter {
+    background-color: #000000;
+    min-height: 200px;
+    color: #000000;
+    padding: 15px;
+
+}
+.contenedor1 {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; /
+    / align-items: center; */
+    width: 50%;
+    color: #ffff;
+    margin-left: 25px;
+}
+#newsletter h1 {
+    float: left;
+    font-size: 60px;
+    width: 100%;
+
+
+}
+#newsletter p{
+    padding-top: 30px;
+
+}
+#newsletter button{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px;
+}
+#newsletter img {
+width: 500px;
+}
+.boton-redondo {
+    width: 700px;
+    height: 50px;
+    display: flex; margin: 0 auto;margin-top:3%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-redondo:hover {
+    background-color: black;
+    color: #fff;
+}

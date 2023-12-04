@@ -1,0 +1,314 @@
+/* ordenes generales */
+.colores {
+    color: #20232A;
+    color: #000000;
+    color: #E7DFD8;
+    color: #EDEDED;
+    color: #A6A6A6;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+body {
+    background-color: #E7DFD8;
+    position: relative;
+    min-height: 100vh;
+}
+.logo_nike {
+    color: #ffff;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: #E7DFD8;
+    height: 40px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #E7DFD8;
+}
+.btn:hover {
+    background-color: #ffff;
+    color: #E7DFD8
+;
+}
+hr {
+    border: solid 1px;
+    color: aliceblue;
+}
+/* código header */
+
+header {
+    background-color: #E7DFD8;
+    color: #000000;
+    min-height: 70px;
+    padding-top: 60px;
+    border-bottom: #000000 solid 2px;
+        background-color: #A6A6A6; 
+        padding: 5px; 
+}
+#logo {
+    float: left;
+    font-size: 60px;
+    font-weight: 300;
+}
+#logo h1 {
+    font-size: 0.9em;
+}
+nav {
+    float: right;
+    font-weight: 600;
+    margin-top: 10px;
+}
+header li {
+    display: inline;
+    padding: 0px 20px
+}
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+header a:hover {
+    color: #000000;
+}
+.marcado {
+    color: #ffff;
+    font-weight: 900;
+}
+.cuadrito {
+    margin-top: 30px;
+   margin-bottom: 30px;
+}
+/* Vidriera */
+#vidriera {
+    /* Estilos para el contenedor del slider */
+    #vidriera .contenedor {
+        max-width: 800px; /* Ajusta el ancho según sea necesario */
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      /* Estilos para el slider */
+      .slider {
+        display: flex;
+        overflow: hidden;
+      }
+      
+      /* Estilos para cada slide */
+      .slide {
+        min-width: 100%; /* Ancho mínimo igual al del contenedor */
+        transition: transform 0.5s ease; /* Efecto de transición */
+      }
+      
+      /* Animación del desplazamiento de las imágenes */
+      .slider:hover .slide {
+        transform: translateX(-100%);
+      }
+      
+      /* Estilos para las imágenes dentro de los slides */
+      .slide img {
+        width: 100%; /* Para ajustar el tamaño de las imágenes al contenedor */
+        height: auto;
+      }
+      .above-slider {
+          position: absolute;
+          z-index: 999; /* Ajusta el valor del z-index según sea necesario para que el div esté por encima de los sliders */
+          /* Ajusta top, left, right, bottom según tu diseño */
+          right:20px;
+          /* Otros estilos para el contenedor si es necesario */
+      }
+      
+      /* Estilos adicionales para el div que contiene las palabras */
+      .above-slider div {
+          /* Estilos de fondo, color, tamaño de fuente, etc. */
+           /* Ejemplo de color de fondo con opacidad */
+          padding: 20px;
+      }
+    
+}
+#vidriera h1 {
+    font-size: 30px;
+    padding-top: 80px;
+    color: #000000;
+    
+}
+#vidriera p {
+    font-size: 30px;
+    color: #000000;
+}
+#vidriera_ideas {
+background-image: url(imgnike/nike\ dunk\ low\ naranja.jpg);
+min-height: 400px;
+background-size: cover;
+background-position: center;
+}
+#vidriera_ideas h1 {
+margin-left: 150px;
+margin-top: 50px;
+}
+#vidriera_somos h1 {
+margin-left: 150px;
+margin-top: 50px;
+margin-bottom: 10px;
+}
+#vidriera_contacto h1 {
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.texto_contacto {
+   margin-bottom: 20px;
+}
+#ideas {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+/* ESTILOS NEWSLETTER  */
+#newsletter {
+    background-color: #000000;
+    min-height: 35px;
+    color: #000000;
+    padding: 15px;
+}
+#newsletter h3 {
+    float: left;
+    font-size: 24px;
+}
+#newsletter form {
+    float: right;
+    line-height: 35px;
+}
+#newsletter input {
+    padding: 4px;
+    height: 26px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+}
+#somos a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Columnas */
+#columnas {
+    margin-top: 20px;
+    padding-bottom: 200px;
+}
+#columnas h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#columnas img {
+    width: 200px;
+background-color: #ffff;
+border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+.columna {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+}
+#columnas h5 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #000000;
+    padding: 2px 25px;
+    margin-top: 15px;
+}
+#columnas p {
+    text-align: center;
+    font-size: 1em;
+    padding: 2px 25px;
+}
+/* FOOTER */
+footer {
+    height: 100%;
+   padding-top: 20px;
+    line-height: 40px;
+    background-color: #ffff;
+    color: #000000;
+ /* text-align: center; */
+    font-size: 1em;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor img{
+    width: 50px; 
+    padding: 5px;
+}
+.Alumnos {
+    color: #000000;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive web design @media */
+@media only screen and (max-width: 768px) {
+    header
+    #logo,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header li {
+        padding: 0 6px;
+    }
+    header nav {
+        padding-bottom: 17px;
+    }
+    /* mediaquery vidriera */
+    #vidriera h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    #vidriera p {
+        font-size: 30px;
+    }
+    /* mediaquery newsletter */
+    #newsletter h3,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #netsletter input {
+        width: 100%;
+        margin: 12px 0px;
+    }
+    #newsletter h3 {
+        font-size: 1em;
+    }
+    #newsletter button {
+        width: 97%;
+    }
+    /* media-query columnas */
+    #columnas h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #columnas .columna {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+}

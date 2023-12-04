@@ -1,0 +1,43 @@
+.contenedor {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%; /* Para asegurar que cada slide ocupe el 100% del contenedor */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.above-slider {
+    text-align: center;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
